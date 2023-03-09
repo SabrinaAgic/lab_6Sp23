@@ -7,7 +7,11 @@ def encode(phrase):
 
 
 def decode(phrase):
-    pass
+    output = ''
+    for i in phrase:
+        new_value = ((int(i)+10)-3) % 10
+        output += str(new_value)
+    return output
 
 
 def main():
